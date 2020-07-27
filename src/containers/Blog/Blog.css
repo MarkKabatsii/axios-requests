@@ -1,0 +1,10 @@
+.Posts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 30px;
+    background-color: #fff;
+}

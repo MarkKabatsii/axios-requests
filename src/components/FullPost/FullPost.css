@@ -1,0 +1,43 @@
+.FullPost {
+    width: 40%;
+    padding: 30px;
+    margin: 20px auto;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    text-align: center;
+    background-color: #fff;
+}
+
+.Edit {
+
+}
+
+.Edit label {
+    display: block;
+    color: grey;
+}
+
+.Edit button {
+    margin: 0 auto;
+    padding: 10px 32px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fa923f;
+    color:#fff
+}
+
+.Edit button:hover,
+.Edit button:active {
+    background-color: #521751;
+}
+
+.Edit button.Delete {
+    background-color: #e53935;
+}
+
+.Edit button.Delete:hover,
+.Edit button.Delete:active {
+    background-color: #b71c1c;
+}
