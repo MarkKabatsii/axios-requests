@@ -1,0 +1,42 @@
+.Header {
+}
+
+.Header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fa923f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.Header li {
+
+}
+
+.Header a {
+    color: white;
+    text-decoration: none;
+    padding: 28px;
+    position: relative;
+}
+
+.Header a:hover:before, .Header a.active:before{
+    content: '';
+    height: 5px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #e66a00;
+}
+
+.Header a:hover,
+.Header a:active,
+.Header a.active{
+    background-color: #f7ad73;
+
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import {Redirect} from 'react-router-dom'
 
 import './NewPost.css';
 import axios from "axios";
@@ -7,7 +8,8 @@ class NewPost extends Component {
     state = {
         title: '',
         content: '',
-        author: 'User'
+        author: 'User',
+        // submitted: false
     }
 
     addedPostHandler = () => {
@@ -19,13 +21,27 @@ class NewPost extends Component {
         axios.post('https://jsonplaceholder.typicode.com/posts/', data)
             .then(response => {
                 console.log(response)
+                // case: 1
+                // this.setState({
+                //     submitted: true
+                // })
+                //--------------------------------
+                //case:2
+                //You can user push or replace
+                this.props.history.push('/posts/');
             })
     }
 
 
     render () {
+        // let redirect = null
+        // if(this.state.submitted) {
+        //     redirect = <Redirect to="/posts/"/>
+        // }
         return (
+
             <div className="NewPost">
+                {/*{redirect}*/}
                 <h1>Add a Post</h1>
                 <label>Title</label>
                 <input
